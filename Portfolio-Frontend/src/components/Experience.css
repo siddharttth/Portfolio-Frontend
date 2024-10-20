@@ -1,0 +1,44 @@
+
+.experience-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.experience-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-role {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.experience-company {
+  font-size: 1.2rem;
+  color: #4facfe;
+  margin-bottom: 0.5rem;
+}
+
+.experience-period {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-bottom: 1rem;
+}
+
+.experience-achievements {
+  list-style-position: inside;
+  color: #d0d0d0;
+}
+
+.experience-achievements li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}

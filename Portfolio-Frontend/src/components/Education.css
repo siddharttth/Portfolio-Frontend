@@ -1,0 +1,33 @@
+.education-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.education-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-degree {
+  font-size: 1.5rem;
+  color: #4facfe;
+  margin-bottom: 0.5rem;
+}
+
+.education-institute {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  color: #a0a0a0;
+  margin-top: 1rem;
+}
+
+.education-year, .education-grade {
+  font-size: 1rem;
+}
