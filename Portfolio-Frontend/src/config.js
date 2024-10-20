@@ -1,4 +1,4 @@
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API_URL = 'https://portfolio-backend-01.up.railway.app' || 'http://localhost:8000';
 
 export const endpoints = {
   education: `${API_URL}/api/education`,
