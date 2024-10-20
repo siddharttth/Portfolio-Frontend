@@ -41,3 +41,15 @@
 .card:hover {
   transform: translateY(-5px);
 }
+
+.custom-cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, rgb(240, 0, 244), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.2s, height 0.2s, transform 0.1s;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
