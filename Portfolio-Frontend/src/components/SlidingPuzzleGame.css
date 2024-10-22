@@ -1,0 +1,62 @@
+.puzzle-game {
+    background: rgba(17, 25, 40, 0.75);
+    backdrop-filter: blur(16px);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 8px;
+    margin: 2rem auto;
+  }
+  
+  .puzzle-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .puzzle-tile.filled {
+    background: linear-gradient(135deg, #002f6c, #0073e6);
+    box-shadow: 0 4px 15px rgba(0, 115, 230, 0.5), 0 0 20px rgba(0, 47, 108, 0.8);
+  }
+  
+  .puzzle-tile.empty {
+    background: transparent;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    cursor: default;
+  }
+  
+  button {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
