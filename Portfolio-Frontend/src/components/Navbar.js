@@ -37,6 +37,9 @@ const Navbar = () => {
           <Link to="/skills" className={location.pathname === '/skills' ? 'active' : ''}>
             Skills
           </Link>
+          <Link to="/games" className={location.pathname === '/games' ? 'active' : ''}>
+            Games
+          </Link>
         </div>
       </div>
     </nav>
