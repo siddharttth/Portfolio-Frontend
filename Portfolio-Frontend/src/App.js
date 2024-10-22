@@ -6,6 +6,10 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Games from './components/Games';
+import SnakeGame from './components/SnakeGame';
+import MemoryMatchGame from './components/MemoryMatchGame';
+import SlidingPuzzleGame from './components/SlidingPuzzleGame';
 import './App.css';
 
 function App() {
@@ -53,6 +57,10 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/game/snake" element={<SnakeGame />} />
+          <Route path="/game/memory" element={<MemoryMatchGame />} />
+          <Route path="/game/puzzle" element={<SlidingPuzzleGame />} />
           <Route path="*" element={<Home />} /> {/* Catch all route */}
         </Routes>
       </div>
